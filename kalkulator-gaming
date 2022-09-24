@@ -1,0 +1,44 @@
+    int num1 = 0; int num2 = 0;
+
+    Console.WriteLine("Kalkulator Gaming");
+    Console.WriteLine();
+    
+
+    Console.WriteLine("Ketik nomor yang ingin dihitung terus tekan Enter");
+    num1 = Convert.ToInt32(Console.ReadLine());
+
+
+    Console.WriteLine("Ketik nomor lainnya terus tekan Enter");
+    num2 = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine("Pilihlah Aritmatika pada List dibawah:");
+    Console.WriteLine("\tt - Tambah");
+    Console.WriteLine("\tk - Kurang");
+    Console.WriteLine("\tx - Kali");
+    Console.WriteLine("\tb - Bagi");
+    Console.Write("");
+    Console.WriteLine();
+
+    switch (Console.ReadLine())
+    {
+        case "t":
+            Console.WriteLine($"Hasilnya adalah: {num1} + {num2} = " + (num1 + num2));
+            break;
+        case "k":
+            Console.WriteLine($"Hasilnya adalah: {num1} - {num2} = " + (num1 - num2));
+            break;
+        case "x":
+            Console.WriteLine($"Hasilnya adalah: {num1} * {num2} = " + (num1 * num2));
+            break;
+        case "b":
+            Console.WriteLine($"Hasilnya adalah: {num1} / {num2} = " + (num1 / num2));
+            break;
+    }
+
+    Console.WriteLine();
+    Console.WriteLine();
+    Console.WriteLine("See ya >_</");
+    Console.WriteLine();
+    Console.WriteLine();
+    Console.Write("Tekan tombol apapun untuk menutup Console Kalkulator Gaming");
+    Console.ReadKey();
